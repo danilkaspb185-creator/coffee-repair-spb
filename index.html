@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ремонт и обслуживание кофемашин в Санкт-Петербурге. Выезд мастера и ремонт в мастерской. Запись по телефону +7 952 230-47-67.">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Ремонт кофемашин СПб — выезд и мастерская</title>
+  <style>
+    :root{--ink:#202522;--muted:#68716b;--green:#285744;--green2:#1d4334;--cream:#f7f7f4;--line:#e5e9e4;--white:#fff;--accent:#d9e8dc;--shadow:0 18px 50px rgba(28,52,39,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1140px,calc(100% - 40px));margin:auto}
+    .top{padding:15px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.82)}.topin{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-weight:800;letter-spacing:-.04em;font-size:19px}.logo span{color:var(--green)}nav{display:flex;gap:25px;color:#505b54;font-size:14px}.topcall{font-weight:750;color:var(--green);white-space:nowrap}
+    .hero{padding:76px 0 66px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-weight:750;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.dot{width:8px;height:8px;border-radius:50%;background:#70a482}
+    h1{font-size:clamp(40px,5.2vw,66px);line-height:1.04;letter-spacing:-.055em;margin:20px 0}.lead{font-size:18px;color:var(--muted);max-width:560px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 24px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:1px solid var(--green);border-radius:12px;padding:14px 21px;font-weight:750;cursor:pointer;transition:.2s}.btn.primary{background:var(--green);color:white}.btn.primary:hover{background:var(--green2);transform:translateY(-1px)}.btn.secondary{color:var(--green);background:transparent}.btn.secondary:hover{background:#edf3ee}
+    .smallnote{font-size:13px;color:var(--muted)}.visual{min-height:440px;border-radius:28px;background:linear-gradient(145deg,#e8eee8,#dce7df);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+    .machine{width:62%;height:310px;background:linear-gradient(90deg,#252d2a,#59645e 18%,#1d2421 70%,#47534c);border-radius:25px 25px 17px 17px;position:relative;box-shadow:0 28px 45px rgba(22,37,28,.25);border:5px solid #303a34}
+    .machine:before{content:"";position:absolute;left:13%;right:13%;top:28px;height:62px;border-radius:8px;background:linear-gradient(135deg,#17201c,#38463d);border:2px solid #718076}
+    .machine:after{content:"";position:absolute;left:25%;right:25%;top:118px;height:8px;background:#aab4ac;border-radius:10px;box-shadow:0 13px 0 #68746b,0 72px 0 -2px #c5cec7}
+    .cup{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);width:82px;height:56px;border-radius:5px 5px 20px 20px;background:#f9faf7;box-shadow:inset -10px 0 #e2e8e1}.cup:after{content:"";position:absolute;right:-22px;top:9px;width:25px;height:30px;border:6px solid #f9faf7;border-left:0;border-radius:0 18px 18px 0}
+    .bean{position:absolute;width:52px;height:31px;border-radius:50%;background:#9b7655;transform:rotate(-35deg);opacity:.9}.bean:after{content:"";position:absolute;left:25px;top:2px;width:2px;height:27px;background:#634a35;transform:rotate(20deg)}
+    .bean.b1{top:48px;right:45px}.bean.b2{bottom:48px;left:42px;transform:rotate(22deg) scale(.7)}
+    .visual-tag{position:absolute;left:24px;bottom:22px;background:white;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:700;box-shadow:var(--shadow)}
+    section{padding:72px 0}.section-head{max-width:650px;margin-bottom:34px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--green);font-weight:800}.section-head h2{font-size:clamp(30px,4vw,43px);line-height:1.12;letter-spacing:-.045em;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 6px 22px rgba(28,52,39,.035)}.icon{width:42px;height:42px;border-radius:12px;background:#edf4ee;color:var(--green);display:grid;place-items:center;font-size:21px;margin-bottom:18px}.card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .soft{background:#eef3ee}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}.ticks{display:grid;gap:15px;margin-top:25px}.tick{display:flex;gap:12px;align-items:flex-start}.check{width:23px;height:23px;border-radius:50%;background:#d8e9dc;color:var(--green);display:grid;place-items:center;flex:none;font-weight:900}
+    .pricebox{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden}.price-row{display:flex;justify-content:space-between;gap:20px;padding:17px 21px;border-bottom:1px solid var(--line)}.price-row:last-child{border:0}.price-row span:first-child{color:#4e5851}.price-row strong{white-space:nowrap;color:var(--green)}.disclaimer{font-size:12px;color:var(--muted);margin:12px 3px 0}
+    .brands{display:flex;flex-wrap:wrap;gap:10px}.brand{padding:12px 17px;background:white;border:1px solid var(--line);border-radius:999px;font-weight:750;color:#465149}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.stepnum{font-size:13px;color:var(--green);font-weight:850}.step h3{margin:9px 0 5px}.step p{margin:0;color:var(--muted);font-size:14px}
+    .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700;color:#4d5850}.field input,.field select,.field textarea{width:100%;border:1px solid #dce3dc;border-radius:10px;padding:13px;background:#fff;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#6c9a7b;box-shadow:0 0 0 3px #e6f0e8}.field textarea{min-height:100px;resize:vertical}
+    .contact-panel{background:var(--green2);color:white;border-radius:24px;padding:34px}.contact-panel p{color:#d5e1d9}.contact-panel a{color:white;font-weight:800;font-size:24px}.contact-panel .btn{background:white;color:var(--green2);border-color:white;margin-top:16px}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .mobilebar{display:none}
+    @media(max-width:850px){nav{display:none}.hero{padding:52px 0}.hero-grid,.split{grid-template-columns:1fr}.visual{min-height:340px}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.contact-panel{padding:27px}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,1140px)}.topcall{font-size:14px}.hero{padding:42px 0}.hero-grid{gap:30px}h1{font-size:43px}.lead{font-size:16px}.visual{min-height:290px}.machine{height:235px}.cards{grid-template-columns:1fr}section{padding:55px 0}.price-row{padding:15px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:10;padding:10px 14px;background:rgba(255,255,255,.96);border-top:1px solid var(--line);gap:10px}.mobilebar .btn{flex:1;padding:12px 8px;font-size:14px}footer{padding-bottom:85px}}
+  </style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap topin">
+    <a class="logo" href="#">Ремонт <span>кофемашин</span> СПб</a>
+    <nav aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#brands">Бренды</a><a href="#contacts">Контакты</a></nav>
+    <a class="topcall" href="tel:+79522304767">+7 952 230-47-67</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Санкт-Петербург и ближайшие районы</div>
+        <h1>Ремонт кофемашин<br>без лишних хлопот</h1>
+        <p class="lead">Диагностика, ремонт и обслуживание домашних и офисных кофемашин. Мастер приедет к вам или аппарат можно передать в мастерскую.</p>
+        <div class="actions">
+          <a class="btn primary" href="#request">Оставить заявку <span>→</span></a>
+          <a class="btn secondary" href="tel:+79522304767">Позвонить</a>
+        </div>
+        <div class="smallnote">Сначала уточним симптомы и согласуем удобный формат ремонта.</div>
+      </div>
+      <div class="visual" aria-label="Иллюстрация кофемашины">
+        <span class="bean b1"></span><span class="bean b2"></span>
+        <div class="machine"><div class="cup"></div></div>
+        <div class="visual-tag">☕ Забота о вашей кофемашине</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Что мы делаем</div><h2>Услуги по ремонту и обслуживанию</h2><p>Помогаем определить причину неисправности и предлагаем подходящий вариант ремонта после диагностики.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">⌕</div><h3>Диагностика</h3><p>Проверка узлов и поиск причины неисправности. Стоимость и сроки согласуем до начала ремонта.</p></article>
+        <article class="card"><div class="icon">⚙</div><h3>Ремонт кофемашин</h3><p>Устранение протечек, проблем с подачей воды, нагревом, помолом и приготовлением кофе.</p></article>
+        <article class="card"><div class="icon">✧</div><h3>Чистка и обслуживание</h3><p>Очистка от кофейных масел и накипи, обслуживание заварочного блока и профилактика.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="prices">
+    <div class="wrap split">
+      <div class="section-head"><div class="kicker">Стоимость</div><h2>Понятные цены до начала работ</h2><p>Итоговая стоимость зависит от модели, неисправности и необходимых деталей. Точную цену мастер назовёт после диагностики.</p></div>
+      <div>
+        <div class="pricebox">
+          <div class="price-row"><span>Выезд и диагностика</span><strong>от 1 000 ₽</strong></div>
+          <div class="price-row"><span>Чистка и профилактика</span><strong>от 1 500 ₽</strong></div>
+          <div class="price-row"><span>Декальцинация</span><strong>от 1 500 ₽</strong></div>
+          <div class="price-row"><span>Ремонт гидросистемы</span><strong>от 2 000 ₽</strong></div>
+          <div class="price-row"><span>Ремонт заварочного блока</span><strong>от 2 000 ₽</strong></div>
+          <div class="price-row"><span>Сложный ремонт</span><strong>по диагностике</strong></div>
+        </div>
+        <p class="disclaimer">Цены на странице — стартовые ориентиры, а не публичная оферта. Запчасти оплачиваются отдельно. Перед публикацией проверьте и при необходимости измените прайс.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="brands">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Популярные марки</div><h2>С какими брендами работаем</h2><p>Укажите марку и модель кофемашины в заявке — уточним возможность и условия ремонта.</p></div>
+      <div class="brands"><span class="brand">De’Longhi</span><span class="brand">Jura</span><span class="brand">Saeco</span><span class="brand">Philips</span><span class="brand">Bosch</span><span class="brand">Krups</span><span class="brand">Nivona</span><span class="brand">Siemens</span><span class="brand">Melitta</span></div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Как проходит ремонт</div><h2>Три простых шага</h2></div>
+      <div class="steps">
+        <div class="step"><div class="stepnum">ШАГ 01</div><h3>Оставляете заявку</h3><p>Звоните или отправляете сообщение. Расскажите, что случилось с кофемашиной.</p></div>
+        <div class="step"><div class="stepnum">ШАГ 02</div><h3>Согласуем диагностику</h3><p>Выбираем выезд мастера или ремонт в мастерской, обсуждаем удобное время.</p></div>
+        <div class="step"><div class="stepnum">ШАГ 03</div><h3>Ремонтируем</h3><p>Согласуем стоимость и необходимые детали, после чего выполняем ремонт.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="request">
+    <div class="wrap split">
+      <div class="section-head"><div class="kicker">Запись на ремонт</div><h2>Опишите проблему — свяжемся с вами</h2><p>Заполните форму. Она откроет WhatsApp с подготовленным сообщением, которое останется отправить.</p>
+        <div class="ticks">
+          <div class="tick"><span class="check">✓</span><span>Выезд к клиенту или ремонт в мастерской</span></div>
+          <div class="tick"><span class="check">✓</span><span>Согласование стоимости до ремонта</span></div>
+          <div class="tick"><span class="check">✓</span><span>Работа с домашними и офисными кофемашинами</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <form id="leadForm">
+          <div class="formgrid">
+            <div class="field"><label for="name">Ваше имя</label><input id="name" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></div>
+            <div class="field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__" required></div>
+            <div class="field"><label for="brand">Марка кофемашины</label><input id="brand" name="brand" placeholder="Например, De’Longhi"></div>
+            <div class="field"><label for="format">Формат ремонта</label><select id="format" name="format"><option>Выезд мастера</option><option>Ремонт в мастерской</option><option>Нужна консультация</option></select></div>
+            <div class="field full"><label for="problem">Что случилось?</label><textarea id="problem" name="problem" placeholder="Опишите неисправность, если знаете"></textarea></div>
+            <div class="field full"><button class="btn primary" type="submit">Отправить заявку в WhatsApp →</button></div>
+          </div>
+          <p class="disclaimer">Нажимая кнопку, вы открываете WhatsApp и самостоятельно отправляете сообщение. Данные не сохраняются на этом сайте.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="wrap">
+      <div class="contact-panel">
+        <div class="kicker" style="color:#b8d4c0">Связаться с нами</div>
+        <h2 style="font-size:clamp(30px,4vw,42px);letter-spacing:-.04em;margin:10px 0">Нужен ремонт кофемашины?</h2>
+        <p>Позвоните — обсудим симптомы, формат ремонта и удобное время.</p>
+        <a href="tel:+79522304767">+7 952 230-47-67</a><br>
+        <a class="btn" href="https://wa.me/79522304767" target="_blank" rel="noopener">Написать в WhatsApp ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap foot"><span>© <span id="year"></span> Ремонт кофемашин СПб</span><span>Санкт-Петербург · Выезд и мастерская</span><span><a href="tel:+79522304767">+7 952 230-47-67</a></span></div></footer>
+<div class="mobilebar"><a class="btn primary" href="tel:+79522304767">Позвонить</a><a class="btn secondary" href="https://wa.me/79522304767" target="_blank" rel="noopener">WhatsApp</a></div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const data = new FormData(this);
+    const message = [
+      'Здравствуйте! Хочу оставить заявку на ремонт кофемашины.',
+      'Имя: ' + (data.get('name') || ''),
+      'Телефон: ' + (data.get('phone') || ''),
+      'Марка: ' + (data.get('brand') || 'не указана'),
+      'Формат: ' + (data.get('format') || ''),
+      'Проблема: ' + (data.get('problem') || 'не указана')
+    ].join('\n');
+    window.open('https://wa.me/79522304767?text=' + encodeURIComponent(message), '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
