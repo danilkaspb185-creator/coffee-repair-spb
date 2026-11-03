@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ремонт и обслуживание кофемашин в Санкт-Петербурге. Выезд мастера и ремонт в мастерской. Запись по телефону +7 952 230-47-67.">
-  <meta name="theme-color" content="#f7f7f4">
+  <meta name="theme-color" content="#111815">
   <title>Ремонт кофемашин СПб — выезд и мастерская</title>
   <style>
     :root{--ink:#202522;--muted:#68716b;--green:#285744;--green2:#1d4334;--cream:#f7f7f4;--line:#e5e9e4;--white:#fff;--accent:#d9e8dc;--shadow:0 18px 50px rgba(28,52,39,.09)}
@@ -36,6 +36,57 @@
     .mobilebar{display:none}
     @media(max-width:850px){nav{display:none}.hero{padding:52px 0}.hero-grid,.split{grid-template-columns:1fr}.visual{min-height:340px}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.contact-panel{padding:27px}}
     @media(max-width:560px){.wrap{width:min(100% - 30px,1140px)}.topcall{font-size:14px}.hero{padding:42px 0}.hero-grid{gap:30px}h1{font-size:43px}.lead{font-size:16px}.visual{min-height:290px}.machine{height:235px}.cards{grid-template-columns:1fr}section{padding:55px 0}.price-row{padding:15px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:10;padding:10px 14px;background:rgba(255,255,255,.96);border-top:1px solid var(--line);gap:10px}.mobilebar .btn{flex:1;padding:12px 8px;font-size:14px}footer{padding-bottom:85px}}
+
+    /* Тёмная цветовая тема */
+    :root{
+      color-scheme:dark;
+      --ink:#edf2ee;
+      --muted:#aab7ae;
+      --green:#79b58d;
+      --green2:#315f46;
+      --cream:#111815;
+      --line:#344139;
+      --white:#1c2721;
+      --accent:#26392d;
+      --shadow:0 18px 50px rgba(0,0,0,.28)
+    }
+    body{background:var(--cream);color:var(--ink)}
+    .top{background:rgba(20,29,24,.94);border-color:var(--line)}
+    nav{color:#c2cec5}
+    .topcall,.logo span,.eyebrow,.kicker,.stepnum{color:var(--green)}
+    .dot{background:#8bc99d}
+    .btn{border-color:var(--green)}
+    .btn.primary{background:#477d59;color:#fff}
+    .btn.primary:hover{background:#568f68}
+    .btn.secondary{color:#a9d5b5;background:#1a2820}
+    .btn.secondary:hover{background:#263b2d}
+    .visual{background:linear-gradient(145deg,#293b30,#1b2a21)}
+    .visual-tag{background:#26352c;color:#f0f5f1}
+    .card,.pricebox,.brand{background:#1b2620;border-color:var(--line);color:var(--ink)}
+    .icon{background:#293d30;color:#a7d6b3}
+    .soft{background:#18221c}
+    .check{background:#31533b;color:#b9e3c3}
+    .price-row{border-color:var(--line)}
+    .price-row span:first-child,.brand,.field label{color:#c3cec6}
+    .price-row strong{color:#9bd0a8}
+    .field input,.field select,.field textarea{
+      background:#111a15;color:var(--ink);border-color:#46564b
+    }
+    .field input::placeholder,.field textarea::placeholder{color:#819087}
+    .field input:focus,.field select:focus,.field textarea:focus{
+      border-color:#79b58d;box-shadow:0 0 0 3px rgba(121,181,141,.16)
+    }
+    .contact-panel{background:#203c2b}
+    .contact-panel p{color:#d0dfd4}
+    .contact-panel .btn{background:#edf4ef;color:#203c2b;border-color:#edf4ef}
+    footer{border-color:var(--line);color:var(--muted)}
+    .mobilebar{background:rgba(20,29,24,.97);border-color:var(--line)}
+    #address{background:#18221c}
+    #address .container{width:min(1140px,calc(100% - 40px));margin:auto}
+    #address .section-heading h2{color:var(--ink)}
+    #address .button{display:inline-flex;padding:12px 18px;border:1px solid var(--green);border-radius:10px;color:#a9d5b5}
+    @media(max-width:560px){.mobilebar{background:rgba(20,29,24,.98)}}
+
   </style>
 </head>
 <body>
@@ -151,6 +202,18 @@
     </div>
   </section>
 </main>
+
+
+    <section class="section" id="address">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Где нас найти</p>
+          <h2>Адрес сервисного центра</h2>
+          <p>Софийская улица, 17, Санкт-Петербург</p>
+        </div>
+        <p><a class="button button-secondary" href="https://yandex.ru/maps/?text=Софийская%20улица%2C%2017%2C%20Санкт-Петербург" target="_blank" rel="noopener">Открыть на карте</a></p>
+      </div>
+    </section>
 
 <footer><div class="wrap foot"><span>© <span id="year"></span> Ремонт кофемашин СПб</span><span>Санкт-Петербург · Выезд и мастерская</span><span><a href="tel:+79522304767">+7 952 230-47-67</a></span></div></footer>
 <div class="mobilebar"><a class="btn primary" href="tel:+79522304767">Позвонить</a><a class="btn secondary" href="https://wa.me/79522304767" target="_blank" rel="noopener">WhatsApp</a></div>
